@@ -6,65 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H-Value Tool</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            flex-direction: column;
+            margin: 0;
+            padding: 20px;
         }
 
         .container {
-            text-align: center;
             background-color: #ffffff;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            padding: 40px 50px;
-            max-width: 800px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 900px;
             width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-10px);
         }
 
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            font-size: 3em;
             color: #333;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
             text-transform: uppercase;
+            font-weight: 700;
         }
 
-        p,
-        ul {
+        p {
             font-size: 1.1em;
-            margin-bottom: 30px;
             color: #555;
+            margin-bottom: 25px;
             line-height: 1.6;
         }
 
         .button-container {
             display: inline-block;
-            background-color: #4CAF50;
+            background-color: #2D88FF;
+            color: #fff;
             padding: 15px 30px;
             font-size: 1.2em;
-            color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .button-container:hover {
-            background-color: #45a049;
+            background-color: #2578e2;
+            transform: translateY(-3px);
         }
 
         .description,
         .disclaimer {
             font-size: 1em;
             color: #444;
+            line-height: 1.8;
             margin-top: 20px;
-            line-height: 1.6;
         }
 
         .disclaimer {
@@ -74,9 +87,45 @@
         }
 
         ul {
+            list-style-type: none;
             text-align: left;
-            margin-left: 20px;
-            list-style-type: disc;
+            padding-left: 30px;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            padding-left: 10px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '•';
+            color: #2D88FF;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .button-container {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
         }
     </style>
 </head>
@@ -88,7 +137,7 @@
         <p>This is a powerful stock valuation tool designed to help you determine whether a stock is overvalued or undervalued based on Graham's and a conservative revised version. Enter a stock's ticker symbol, margin of safety, and growth rate to get started.</p>
 
         <a href="https://script.google.com/macros/s/AKfycbzDIhsEe7pE3qs3X0I3AhHMjHpXTLtZPLk8ds9Ll_CMSrM8aGpdgw1RKFk0fKP75uqD/exec" target="_blank" class="button-container">
-            Open Web App
+            Access Valuation Tool
         </a>
 
         <div class="description">
