@@ -61,6 +61,22 @@
             margin-top: 20px;
             line-height: 1.6;
         }
+
+        .disclaimer {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 40px;
+            line-height: 1.4;
+        }
+
+        .disclaimer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .disclaimer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -68,21 +84,24 @@
 
     <div class="container">
         <h1>Welcome to the H-Value Tool</h1>
-        <p>This is a powerful stock valuation tool designed to give you detailed insights and an overview of various stocks. Quickly access the tool below to start your analysis.</p>
+        <p>This is a powerful stock valuation tool designed to help you determine whether a stock is overvalued or undervalued based on Graham's and a conservative revised version. Enter a stock's ticker symbol, margin of safety, and growth rate to get started.</p>
 
         <a href="https://script.google.com/macros/s/AKfycbzDIhsEe7pE3qs3X0I3AhHMjHpXTLtZPLk8ds9Ll_CMSrM8aGpdgw1RKFk0fKP75uqD/exec" target="_blank" class="button-container">
             Open Web App
         </a>
 
         <div class="description">
-            <p><strong>What Can You Do with This Tool?</strong></p>
-            <p>The <strong>H-Value Tool</strong> allows you to perform a detailed stock valuation based on the principles of Benjamin Graham and other valuation methods. By entering a stock's ticker symbol, margin of safety, and growth rate, you can quickly get insights into whether a stock is overvalued or undervalued.</p>
+            <p><strong>How Does This Tool Work?</strong></p>
+            <p>The H-Value Tool provides two valuation methods:</p>
             <ul>
-                <li><strong>Graham's Valuation</strong>: Calculates intrinsic value based on earnings and margin of safety.</li>
-                <li><strong>Revised Valuation</strong>: A refined approach to estimate a more accurate price range.</li>
-                <li><strong>Key Metrics</strong>: View essential data such as P/E ratios, EPS, and acceptable buy prices.</li>
+                <li><strong>Graham's Valuation</strong>: Estimates the intrinsic value of a stock based on earnings and margin of safety.</li>
+                <li><strong>Revised Valuation</strong>: A more conservative approach to determine a stock’s price range. Note that it’s not more accurate, but rather more cautious.</li>
             </ul>
-            <p><strong>Important:</strong> For the Margin of Safety under Graham's valuation and the P/E No Growth under the revised version, please enter these values as percentages. Don’t worry if they appear as decimals—the tool will handle them correctly.</p>
+            <p><strong>Important:</strong> In the Revised Version, the Margin of Safety and P/E No Growth should be entered as percentages. These values may appear as decimals, but don’t worry—the tool handles them correctly. This will be updated soon for clarity.</p>
+        </div>
+
+        <div class="disclaimer">
+            <p><strong>Disclaimer:</strong> The results provided by this tool are for informational purposes only and are not guaranteed. Always conduct your own research and consult with a professional before making any investment decisions.</p>
         </div>
     </div>
 
