@@ -1,114 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H-Value Tool</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7fa;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
             color: #333;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
         }
-        header {
-            background-color: #004a99;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
+
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #004a99;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .btn {
-            background-color: #004a99;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-transform: uppercase;
-            font-weight: bold;
             text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 40px 50px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        p,
+        ul {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .button-container {
             display: inline-block;
+            background-color: #4CAF50;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container:hover {
+            background-color: #45a049;
+        }
+
+        .description,
+        .disclaimer {
+            font-size: 1em;
+            color: #444;
             margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .disclaimer {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 30px;
+        }
+
+        .disclaimer a {
+            color: #4CAF50;
             text-decoration: none;
         }
-        .btn:hover {
-            background-color: #003d80;
+
+        .disclaimer a:hover {
+            text-decoration: underline;
         }
-        .note, .disclaimer {
-            background-color: #e9f7fd;
-            padding: 10px;
-            border-left: 5px solid #004a99;
-            margin-top: 20px;
-        }
-        .note {
-            background-color: #fff3e6;
-            border-left: 5px solid #ff8c00;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f7fa;
-            font-size: 14px;
-            color: #555;
+
+        ul {
+            text-align: left;
+            margin-left: 20px;
+            list-style-type: disc;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Welcome to the H-Value Tool</h1>
-    <p>Assess whether a stock is overvalued or undervalued using Graham's and a conservative revised valuation method.</p>
-</header>
+    <div class="container">
+        <h1>Welcome to the H-Value Tool</h1>
+        <p>This powerful stock valuation tool helps you assess whether a stock is overvalued or undervalued using Graham's Valuation and a conservative Revised Valuation. Enter a stock's ticker symbol, margin of safety, and growth rate to get started.</p>
 
-<div class="container">
-    <section class="section">
-        <h2>How It Works</h2>
-        <p>The H-Value Tool provides two key stock valuation methods:</p>
-        <ul>
-            <li><strong>Graham's Valuation:</strong> Estimates the stock's intrinsic value using earnings and margin of safety.</li>
-            <li><strong>Revised Valuation:</strong> A more cautious estimate, offering a conservative range for the stock’s value.</li>
-            <li><strong>Other Metrics:</strong> At the bottom of the page, you’ll find an overview of the business, including key statistics such as EPS, P/E ratio, analyst ratings, and more.</li>
-        </ul>
-    </section>
+        <a href="https://script.google.com/macros/s/AKfycbzDIhsEe7pE3qs3X0I3AhHMjHpXTLtZPLk8ds9Ll_CMSrM8aGpdgw1RKFk0fKP75uqD/exec" target="_blank" class="button-container">
+            Open Web App
+        </a>
 
-    <section class="section">
-        <h2>Enter Stock Information</h2>
-        <p>To access the full valuation tool, click the button below. You'll be able to input the stock ticker, margin of safety, and growth rate to calculate the stock's intrinsic value based on both valuation methods.</p>
-        <a href="valuation-tool.html" class="btn">Access Valuation Tool</a>
-    </section>
+        <div class="description">
+            <p><strong>How It Works:</strong></p>
+            <ul>
+                <li><strong>Graham's Valuation:</strong> Estimates the stock's intrinsic value using earnings and margin of safety.</li>
+                <li><strong>Revised Valuation:</strong> A more cautious estimate, providing a conservative range for the stock's value.</li>
+                <li><strong>Other Metrics:</strong> At the bottom of the page, you can view an overview of the business and key statistics such as EPS, P/E ratio, analyst ratings, and more.</li>
+            </ul>
 
-    <section class="note">
-        <h3>Note:</h3>
-        <p>In Graham’s Valuation, the margin of safety is displayed as a decimal instead of a percentage. Similarly, the P/E No Growth in the Revised Valuation is also shown as a decimal. The tool handles these values correctly (this will be updated for clarity in the future).</p>
-    </section>
+            <p><strong>Note:</strong> In Graham's Valuation, the margin of safety is displayed as a decimal instead of a percentage. Similarly, the P/E No Growth in the Revised Valuation appears as a decimal but is correctly handled by the tool. This will be updated soon for clarity.</p>
+        </div>
 
-    <section class="disclaimer">
-        <h3>Disclaimer:</h3>
-        <p>The results provided by this tool are for informational purposes only. Always conduct your own research and consult with a financial advisor before making any investment decisions.</p>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 H-Value Tool. All rights reserved.</p>
-</footer>
+        <div class="disclaimer">
+            <p><strong>Disclaimer:</strong> The results provided by this tool are for informational purposes only. Always do your own research and consult with a financial advisor before making any investment decisions. <a href="https://www.example.com">Learn more.</a></p>
+        </div>
+    </div>
 
 </body>
+
 </html>
