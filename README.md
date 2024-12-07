@@ -6,7 +6,7 @@ The H-Value Tool is a powerful suite of tools to help you make informed investme
 
 ### Valuation Tool
 This tool helps you determine whether a stock is overvalued or undervalued based on Graham's and a conservative revised valuation method. You can access the Valuation Tool here:  
-[Access Valuation Tool](https://script.google.com/macros/s/AKfycbypb9v7osIHvtgSkA2XNGSRNHwqx97vj-w8IOzCTQzJ9Wy_uqJzZkntzRWx8xprAkA_/exec)
+[Access Valuation Tool](https://script.google.com/macros/s/AKfycbw7SWLFWHBBrAUeiKR32a9mwse9yey6vLP0_noF5yPheohucXJFZ80HO7FeYP9vYqAg/exec)
 
 ### Portfolio Manager
 With the Portfolio Manager, you can create and manage your portfolio by entering:
